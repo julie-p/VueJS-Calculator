@@ -1,26 +1,88 @@
 <template>
   <div class="calculator">
-    <div class="display">{{ current || '0' }}</div>
-    <div @click="clear" class="button">C</div>
-    <div @click="sign" class="button">+/-</div>
-    <div @click="percent" class="button">%</div>
-    <div @click="divide" class="button operator">÷</div>
-    <div @click="append('7')" class="button">7</div>
-    <div @click="append('8')" class="button">8</div>
-    <div @click="append('9')" class="button">9</div>
-    <div @click="times" class="button operator">x</div>
-    <div @click="append('4')" class="button">4</div>
-    <div @click="append('5')" class="button">5</div>
-    <div @click="append('6')" class="button">6</div>
-    <div @click="minus" class="button operator">-</div>
-    <div @click="append('1')" class="button">1</div>
-    <div @click="append('2')" class="button">2</div>
-    <div @click="append('3')" class="button">3</div>
-    <div @click="add" class="button operator">+</div>
-    <div @click="append('0')" class="button zero">0</div>
-    <div @click="dot" class="button">.</div>
-    <div @click="equal" class="button operator">=</div>
+
+    <div class="display">
+      {{ current || '0' }}
+    </div>
+
+    <div @click="clear" class="button">
+      <p>C</p>
+    </div>
+
+    <div @click="sign" class="button">
+      <p>+/-</p>
+    </div>
+
+    <div @click="percent" class="button">
+      <p>%</p>
+    </div>
+
+    <div @click="divide" class="button operator">
+      <p>÷</p>
+    </div>
+
+    <div @click="append('7')" class="button">
+      <p>7</p>
+    </div>
+
+    <div @click="append('8')" class="button">
+      <p>8</p>
+    </div>
+
+    <div @click="append('9')" class="button">
+      <p>9</p>
+    </div>
+
+    <div @click="times" class="button operator">
+      <p>x</p>
+    </div>
+
+    <div @click="append('4')" class="button">
+      <p>4</p>
+    </div>
+
+    <div @click="append('5')" class="button">
+      <p>5</p>
+    </div>
+
+    <div @click="append('6')" class="button">
+      <p>6</p>
+    </div>
+
+    <div @click="minus" class="button operator">
+      <p>-</p>
+    </div>
+
+    <div @click="append('1')" class="button">
+      <p>1</p>
+    </div>
+
+    <div @click="append('2')" class="button">
+      <p>2</p>
+    </div>
+
+    <div @click="append('3')" class="button">
+      <p>3</p>
+    </div>
+
+    <div @click="add" class="button operator">
+      <p>+</p>
+    </div>
+
+    <div @click="append('0')" class="button zero">
+      <p>0</p>
+    </div>
+
+    <div @click="dot" class="button"> 
+      <p>.</p>
+    </div>
+
+    <div @click="equal" class="button operator">
+      <p>=</p>
+    </div>
+
   </div>
+  
 </template>
 
 <script>
@@ -104,6 +166,10 @@ export default {
     border-radius: 20px;
     width: 95%;
     margin: 0 auto;
+  }
+
+  p {
+    margin-top: 1rem;
   }
 
   .zero {

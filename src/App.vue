@@ -26,7 +26,7 @@ body {
     radial-gradient(50% 30% ellipse at center top, #FAACA8 0%, rgba(0,0,0,0) 100%),
     radial-gradient(60% 50% ellipse at center bottom, #DDD6F3 0%, #FAACA8 100%);
   /* background-color: #FAACA8;
-background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 50%, #ffffff 100%); */
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 50%, #ffffff 100%); */
   background-attachment: fixed;
   color: #6cacc5;
 }
