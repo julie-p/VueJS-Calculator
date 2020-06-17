@@ -100,7 +100,7 @@ export default {
 
   .display {
     grid-column: 1 / 5;
-    color: #6cacc5;
+    color: #eee;
     border-radius: 20px;
     width: 95%;
     margin: 0 auto;
